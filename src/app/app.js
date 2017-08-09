@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const NEW_DIV = (
-  <div className="block">
+  <div id="block">
     <button>X</button>
   </div>
 );
 let boxBtn = document.getElementById('makeBox');
+
 
 boxBtn.addEventListener("click", function() {
     makeABox();
@@ -19,4 +20,8 @@ function makeABox() {
         NEW_DIV,
         document.getElementById('app')
       );
+      let block = document.getElementById('block');
+      block.addEventListener("click", function() {
+          this.style.backgroundColor = 'black';
+        }, false);
 }
