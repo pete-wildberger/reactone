@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const NEW_DIV = (
-  <div id="block">
+  <div id="block" >
     <button>X</button>
   </div>
 );
